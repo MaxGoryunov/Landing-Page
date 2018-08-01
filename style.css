@@ -18,8 +18,9 @@ a {
 header {
     width: 100%;
     background: #efefef;
-    position: fixed;
-    transition: 1s ease-out;    
+    position: sticky;
+    top: -1px;
+    transition: 0.5s ease-out;    
 }
 header.large {
     padding: 20px 0;
@@ -53,14 +54,14 @@ header>section>div>a:hover {
     color: #fff;
 }
 main {
-    padding-top: 40px;
+    padding-top: 0px;
     background: #999;
 }
 main>section {
     box-shadow: 20px 20px 50px #333, -20px 20px 50px #333, 20px -20px 50px #333, -20px -20px 50px #333;
 }
 main>section>div {
-    height: 620px;
+    height: 650px;
 }
 main>section>div:nth-child(1) {
     background: #fff;
@@ -82,10 +83,10 @@ main>section>div:nth-child(1)>img {
     border-radius: 10px;
     width: 300px;
     height: auto;
-    margin: 100px 30px;
+    margin: 120px 30px;
 }
 main>section>div:nth-child(1)>h1 {
-    padding-top: 100px;
+    padding-top: 120px;
     font-size: 3em;
 }
 main>section>div:nth-child(1)>h1+p {
@@ -119,6 +120,25 @@ main>section>div:nth-child(3)>div>p {
     margin: 20px;
     padding-left: 20px;
 }
+
+
+
+.tab {
+    border: 1px solid #777;
+    display: inline-block;
+    padding: 5px;
+    margin: 0;
+    cursor: pointer;
+}
+#tabs .hide {
+    display: none;
+}
+#tabs .show  {
+    display: block;
+}
+
+
+
 
 
 
