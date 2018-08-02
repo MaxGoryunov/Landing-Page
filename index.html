@@ -9,8 +9,10 @@
 </head>
 <body>
     <div id="tabs">
-            <div class="tab">Option 1</div>
-            <div class="tab">Option 2</div>
+            <div id="uncovered">
+                <div class="tab">Option 1</div>
+                <div class="tab">Option 2</div>
+            </div>
             <div class="tabContent">
                 <header class="large">
                     <section>
@@ -49,30 +51,23 @@
                 </footer>
             </div>
             <div class="tabContent">
-                <header class="large">
-                    <section>
-                        <div>
-                            <a href="#main">Основное</a>
-                            <a href="#skills">Навыки</a>
-                            <a href="#callback">Связь</a>
-                        </div>
-                    </section>
-                </header>
                 <main>
-                    <section>
+                    <section id="menu">
                         <div>
-                            <a id="main"></a><img src="img/img1.jpg">
+                            <a id="ex2"></a><img src="img/img1.jpg">
                             <h1>Горюнов Максим Юрьевич</h1>
                             <p>Начинающий веб-разработчик</p>
                             <p>Санкт-Петербург, Россия</p>
+                            <a class="arrow" href="#ex1">&#10094</a>
                         </div>
                         <div>
-                            <a id="skills"></a><h2>Личная информация и навыки веб-разработки</h2>
+                            <a class="arrow" href="#ex2" id="ex1">&#10094</a><h2>Личная информация и навыки веб-разработки</h2>
                             <p>Навыки и умения в сфере <span>Web</span>: <span>HTML 5</span>, <span>CSS 3</span>, фреймворк <span>Bootstrap</span>, <span>JavaScript</span>, фреймворк <span>Angular 5</span>, система контроля версий <span>Git(Git-Flow)</span>.</p>
                             <p>Обучается в ГБОУ Лицей № 95, 9 класс. Интересуется изобразительным искусством, изучением иностранных языков(английский), спортивным ориентированием.</p>
+                            <a class="arrow" href="#ex3">&#10094</a>
                         </div>
                         <div>
-                            <a id="callback"></a><h2>Как связаться</h2>
+                            <a class="arrow" href="#ex1" id="ex3">&#10094</a><h2>Как связаться</h2>
                             <div>
                                 <p>+7(921)872-37-29 Максим</p>
                                 <p>+7(921)932-85-14 Юрий</p>
