@@ -169,8 +169,8 @@ main>section>div:nth-child(3)>div>p {
     padding-top: 0px;
 }
 #tabs>div:nth-child(3)>main>section>div:nth-child(3)>div>p {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }    
 
 #contacts {
@@ -182,7 +182,7 @@ main>section>div:nth-child(3)>div>p {
     border-radius: 5px; 
 }
 #contacts>div {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 }
 #contacts>div>div {
@@ -213,8 +213,8 @@ s#contacts>div>div:last-child {
 }
 #contacts>div>p {
     text-align: right;
-    margin-top: 255px;
-    width: 500px;
+    margin-top: 235px;
+    width: 645px;
     clear: both;
 }
 
