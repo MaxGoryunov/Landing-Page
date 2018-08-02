@@ -175,7 +175,7 @@ main>section>div:nth-child(3)>div>p {
 
 #contacts {
     overflow: hidden;
-    background: #ddd;
+    background: #efefef;
     width: 70%;
     margin: 0 auto;
     padding: 5px;
@@ -184,6 +184,12 @@ main>section>div:nth-child(3)>div>p {
 #contacts>div {
     width: 90%;
     margin: 0 auto;
+}
+#contacts>div>h3 {
+    color: #111;
+}
+#contacts>div>h3>span {
+    color: #666;
 }
 #contacts>div>div {
     height: 30px;
