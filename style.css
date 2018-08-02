@@ -56,12 +56,51 @@ header>section>div>a:hover {
 main {
     padding-top: 0px;
     background: #999;
+    overflow: hidden;
 }
 main>section {
     box-shadow: 20px 20px 50px #333, -20px 20px 50px #333, 20px -20px 50px #333, -20px -20px 50px #333;
 }
 main>section>div {
     height: 650px;
+}
+main>section>div>a {
+    text-decoration: none;
+    color: #777;
+    display: block;
+    transform-origin: center center;
+    transform: rotate(-90deg);
+    font-size: 3em;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+}
+main>section>div:nth-child(1)>a.arrow {
+    margin-top: 350px;
+}
+#tabs>div:last-child>main>section>div:nth-child(2), #tabs>div:last-child>main>section>div:nth-child(3) {
+    overflow: hidden;
+}
+main>section>div:nth-child(2)>a.arrow:first-of-type {
+    margin-top: 20px;
+}
+main>section>div:nth-child(2)>a.arrow:last-of-type {
+    margin-top: 150px;
+}
+main>section>div:nth-child(3)>a.arrow {
+    margin-top: 30px;
+}
+main>section>div:nth-child(2)>a:first-of-type {
+    transform: rotate(90deg);
+}
+main>section>div:nth-child(3)>a:first-of-type {
+    transform: rotate(90deg);
+}
+#tabs>div:last-child>main>section>div:nth-child(1)>h1 {
+    padding-top: 0;
+}
+#tabs>div:last-child>main>section>div:nth-child(1)>img {
+    margin-top: 0; 
 }
 main>section>div:nth-child(1) {
     background: #fff;
@@ -98,7 +137,7 @@ main>section>div:nth-child(1)>h1+p+p {
 }
 main>section>div:nth-child(2)>h2 {
     font-size: 2.5em;
-    padding: 60px 20px 20px;
+    padding: 10px 20px 20px;
     text-align: center;
 }
 main>section>div:nth-child(2)>p {
@@ -120,6 +159,64 @@ main>section>div:nth-child(3)>div>p {
     margin: 20px;
     padding-left: 20px;
 }
+#tabs>div:nth-child(3)>main>section>div:nth-child(2) {
+    height: 650px;
+}
+#tabs>div:nth-child(3)>main>section>div:nth-child(3) {
+    height: 650px;
+}
+#tabs>div:nth-child(3)>main>section>div:nth-child(3)>h2 {
+    padding-top: 0px;
+}
+#tabs>div:nth-child(3)>main>section>div:nth-child(3)>div>p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}    
+
+#contacts {
+    overflow: hidden;
+    background: #ddd;
+    width: 70%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 5px; 
+}
+#contacts>div {
+    width: 70%;
+    margin: 0 auto;
+}
+#contacts>div>div {
+    height: 30px;
+    clear: both;
+}
+s#contacts>div>div:last-child {
+    height: 270px;
+}
+#contacts>div>div>span {
+    width: 135px;
+    color: rgb(0, 140, 196);
+    font-weight: bold;
+    float: left;
+}
+#contacts>div>div>input {
+    padding: 5px 0px 5px 5px;
+    border: 1px solid rgb(209, 209, 209);
+    width: 280px;
+    color: rgb(112, 99, 91);
+}
+#contacts>div>div textarea {
+    padding: 5px 0px 5px 5px;
+    border: 1px solid rgb(209, 209, 209);
+    width: 505px;
+    height: 250px;
+    color: rgb(112, 99, 91);
+}
+#contacts>div>p {
+    text-align: right;
+    margin-top: 255px;
+    width: 500px;
+    clear: both;
+}
 
 
 
@@ -129,6 +226,19 @@ main>section>div:nth-child(3)>div>p {
     padding: 5px;
     margin: 0;
     cursor: pointer;
+    position: absolute;
+    top: 0;
+}
+#uncovered {
+    background: #fff;
+    overflow: hidden;
+    z-index: 5;
+}
+.tab:nth-child(2) {
+    left: 75px;
+}
+.tabContent {
+    margin-top: 33.6px;
 }
 #tabs .hide {
     display: none;
